@@ -5,6 +5,7 @@ import android.Manifest
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.core.content.ContextCompat
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_camera.*
@@ -26,6 +27,12 @@ class CameraActivity : AppCompatActivity() {
         } else {
             cameraView.bindToLifecycle(this)
         }
+    }
+
+
+    fun onClickFlip(v: View) {
+        //called whenever user clicks the button
+        cameraView.toggleCamera()
     }
 
     override fun onRequestPermissionsResult(

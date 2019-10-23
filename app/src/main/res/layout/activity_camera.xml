@@ -12,5 +12,31 @@
         android:layout_height="match_parent"
         android:keepScreenOn="true" />
 
+    <ImageButton
+        android:layout_margin="16dp"
+        android:id="@+id/cameraCaptureButton"
+        android:src="@drawable/ic_camera_black_48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageButton
+        android:id="@+id/cameraFlipButton"
+        android:onClick="onClickFlip"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_rotate_left_black_48dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageButton
+        android:id="@+id/galleryButton"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_satellite_black_48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
